@@ -7,26 +7,20 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(#3b24cf, #556ed3 50%, #658ee8 60%, #5b78aa);
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    background: linear-gradient(#3b24cf, #556ed3 50%, #658ee8 60%, hsl(248, 70%, 48%));
 }
 
 header,
 footer {
     height: 100px;
-    background-color: #212ace;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    place-content: space-between;
     padding: 0 20px;
 }
 
 main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3b4ecd;
+    display: grid;
+    /* place-content: center; */
 }
